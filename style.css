@@ -1,0 +1,755 @@
+:root {
+    --white-color: #FEFCFB;
+    --orange-color: #FA7436;
+    --whitegrey-color: #FFFFFF;
+    --white-secondpagecolor: #F7F8FC;
+    --black-color: #1E1E1E;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e3e3e3;
+    border-radius: 5px;
+}
+
+nav ul li a.btn {
+    background-color: #ff7a59;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul li a.btn:hover {
+    background-color: #ff5733;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 100px 0;
+}
+
+.hero .left {
+    max-width: 45%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #777;
+}
+
+.hero a.btn {
+    background-color: #ff7a59;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.hero a.btn:hover {
+    background-color: #ff5733;
+}
+
+.hero .right {
+    position: relative;
+    max-width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero .right img.tourist-img {
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+}
+
+/* Achievement buttons around the image */
+.button {
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    z-index: 1;
+}
+
+.button h2 {
+    font-size: 18px;
+    margin-right: 15px;
+    margin:0;
+}
+
+.button img {
+    width: 24px;
+    height: 24px;
+    margin-bottom:200px;
+    
+}
+
+.button p {
+    font-size: 16px;
+    margin:0;
+    color: #777;
+    margin-bottom: 4px;
+}
+
+/* Positioning the buttons */
+.button.left {
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%);
+}
+
+.button.right {
+    top: 200px;
+    right: 130px;
+    transform: translateY(-50%);
+}
+
+.button.bottom {
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Container Section */
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+}
+
+.container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 1rem;
+}
+
+.container .btn {
+    background-color: #ff6347;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    align-self: center;
+}
+
+/*next section page*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+section.testimonial {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.center h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.center p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.testimonial .signup,
+.testimonial .worth-of-money,
+.testimonial .exciting-travel {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin: 0 1%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial .signup img,
+.testimonial .worth-of-money img,
+.testimonial .exciting-travel img {
+    margin-top: 20px;
+    width: 100px;
+}
+
+.testimonial h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .testimonial .signup,
+    .testimonial .worth-of-money,
+    .testimonial .exciting-travel {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+/*next section*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+section.deals-and-discounts {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.exclusive {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.exclusive h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.exclusive p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.deals-and-discounts .madrid,
+.deals-and-discounts .frienze,
+.deals-and-discounts .paris,
+.deals-and-discounts .london {
+    display: inline-block;
+    vertical-align: top;
+    width: 22%; /* Equal widths for four items */
+    text-align: center;
+    padding: 20px;
+    margin: 0 1%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.deals-and-discounts img.main-img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Adjust as needed */
+    border-radius: 8px;
+}
+
+.deals-and-discounts img.secondary-img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.deals-and-discounts .city-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.deals-and-discounts .city-info h1 {
+    font-size: 24px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.deals-and-discounts .city-info .stars {
+    display: flex;
+    align-items: center;
+}
+
+.deals-and-discounts .city-info .stars img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.deals-and-discounts .images-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deals-and-discounts .images-container .left-img,
+.deals-and-discounts .images-container .right-img {
+    width: 48%;
+}
+
+@media (max-width: 1024px) {
+    .deals-and-discounts .madrid,
+    .deals-and-discounts .frienze,
+    .deals-and-discounts .paris,
+    .deals-and-discounts .london {
+        width: 45%; /* Adjust for medium-sized screens */
+        margin: 10px 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    .deals-and-discounts .madrid,
+    .deals-and-discounts .frienze,
+    .deals-and-discounts .paris,
+    .deals-and-discounts .london {
+        width: 100%; /* Stack in a single column on smaller screens */
+        margin: 10px 0;
+    }
+}
+/*next section*/
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Vacation section centered, image on the right */
+.vacation {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.vacation h1, .vacation p {
+    margin: 0;
+    padding: 10px;
+}
+
+.vacation img {
+    position: absolute;
+    right: 20px; /* Places the button image on the right */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px; /* Adjust size as needed */
+}
+
+/* Container for rome, uk, japan */
+.places {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Individual boxes for rome, uk, japan */
+.rome, .uk, .japan {
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    width: 25%;
+    margin: 10px; /* Ensure each box takes 30% of the container */
+}
+
+.rome img, .uk img, .japan img {
+    width: 100px; /* Adjust image size as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+
+
+
+/*next section*/
+.people {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.say {
+    width: 40%;
+    padding-right: 20px;
+}
+
+.say h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.say p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.say img {
+    width: 50px;
+    margin-top: 20px;
+}
+
+/* Styling the cards section */
+.cards {
+    width: 50%;
+    background-color: #f5f5f5; /* Light background for the box */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Positioning image outside the box */
+.cards img {
+    position: absolute;
+    top: -40px;
+    left: -30px;
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.cards p {
+    margin-top: 40px; /* Space for the image */
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.cards h1 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.cards h4 {
+    font-size: 1rem;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .people {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .say, .cards {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .cards img {
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+/*next section*/
+
+
+
+
+/* General styling for the update section */
+.update {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Blog heading centered */
+.blog {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Container for blog items (amazing, enough, africa, travel) */
+.blog-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual boxes for amazing, enough, africa, travel */
+.amazing, .enough, .africa, .travel {
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    width: 23%; /* Each box takes roughly 23% of the width */
+    margin: 10px; /* Spacing between boxes */
+}
+
+/* Image styling inside each item */
+.amazing img, .enough img, .africa img, .travel img {
+    width: 150px; /* Adjust image size as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Button centered at the bottom of the page */
+.btn {
+    margin-top: 50px; /* Adds some space from the blog items */
+    text-align: center;
+}
+
+.btn img {
+    width: 100px; /* Adjust button size as needed */
+    height: auto;
+}
+
+
+/*next section*/
+/* General section styling */
+.last {
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Subscribe section styling */
+.subscribe {
+    background-color:
+    #E85C0D;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.subscribe h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.subscribe img {
+    margin-bottom: 20px;
+}
+
+.subscribe div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.subscribe input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 300px;
+    padding-right: 100px; /* Space for the button */
+}
+
+.subscribe button {
+    position: absolute;
+    right: 5px;  /* Placed in the right corner inside the input box */
+    padding: 10px 15px;
+    background-color: 
+    #c0622b;
+    color: #040404;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer container styling */
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+/* Logo section on the left */
+.logo {
+    width: 30%;
+}
+
+.logo img {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.logo h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Footer columns for links */
+.footer, .round, .simple {
+    width: 20%;
+}
+
+.footer h1, .round h1, .simple h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.footer ul, .round ul, .simple ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li, .round ul li, .simple ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a, .round ul li a, .simple ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Footer bottom styling */
+.footer.bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.footer.bottom p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.footer.bottom h5 {
+    font-size: 0.9rem;
+    color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo, .footer, .round, .simple {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer.bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer.bottom p, .footer.bottom h5 {
+        margin-bottom: 10px;
+    }
+}
